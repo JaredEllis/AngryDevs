@@ -198,6 +198,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &83902674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 83902676}
+  - component: {fileID: 83902675}
+  - component: {fileID: 83902677}
+  m_Layer: 0
+  m_Name: Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &83902675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83902674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba1e065d8761ef6479a8f4124ba89453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &83902676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83902674}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 550925772}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &83902677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83902674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09179c5486b59646ad87747341246c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &152738846
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,9 +328,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a790b8f56038c540a0112b46cb677c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <PlayerUnitPrefab>k__BackingField: {fileID: 3802873730701602542, guid: de9ebbd87feadad4e8207530a5d3bc8d, type: 3}
-  <PlayerUnitSpawnLocation>k__BackingField: {fileID: 152738847}
-  <UnitSpawner>k__BackingField: {fileID: 1828374904}
+  _tapLimitDuration: 0.2
+  _playerUnitPrefab: {fileID: 3802873730701602542, guid: de9ebbd87feadad4e8207530a5d3bc8d, type: 3}
+  _playerUnitSpawnLocation: {fileID: 152738847}
+  _unitSpawner: {fileID: 1828374904}
+  _touchManager: {fileID: 83902677}
 --- !u!4 &550925772
 Transform:
   m_ObjectHideFlags: 0
@@ -287,6 +346,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1828374905}
+  - {fileID: 83902676}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
