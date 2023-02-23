@@ -23,6 +23,6 @@ public abstract class State
 
     public virtual void Tick()
     {
-        
+        StateDuration += Time.deltaTime;
     }
 }

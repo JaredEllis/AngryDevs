@@ -51,13 +51,13 @@ public class StateMachineMB : MonoBehaviour
             CurrentState.Tick();
     }
 
-    protected void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         if (CurrentState != null && !_inTransition)
             CurrentState.FixedTick();
     }
 
-    protected void OnDestroy()
+    protected virtual void OnDestroy()
     {
         CurrentState?.Exit();
     }
