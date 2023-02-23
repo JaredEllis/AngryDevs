@@ -37,14 +37,14 @@ public class GamePlayState : State
         base.Tick();
         
         // _controller.TouchManager.touchInput = _controller.Input.IsTapPressed;
-        
-        if (_controller.TouchManager.IsTapPressed)
+
+        if (_controller.TouchManager.win)
         {
             Debug.Log("You Win!");
         }
-        else if (StateDuration >= _controller.TapLimitDuration)
+        else if (_controller.TouchManager.lose)
         {
-            Debug.Log("You Lose!");
+            Debug.Log("You Lose");
         }
     }
 }

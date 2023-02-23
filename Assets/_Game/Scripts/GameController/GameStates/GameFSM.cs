@@ -10,6 +10,7 @@ public class GameFSM : StateMachineMB
     
     public GameSetupState SetupState { get; private set; }
     public GamePlayState PlayState { get; private set; }
+    public WinState WinState { get; private set; }
     
     // Start is called before the first frame update
     void Awake()
@@ -17,6 +18,7 @@ public class GameFSM : StateMachineMB
         _controller = GetComponent<GameController>();
         SetupState = new GameSetupState(this, _controller);
         PlayState = new GamePlayState(this, _controller);
+        WinState = new WinState(this, _controller);
     }
 
     private void Start()
