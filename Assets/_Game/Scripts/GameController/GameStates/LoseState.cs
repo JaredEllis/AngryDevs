@@ -2,17 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoseState : MonoBehaviour
+public class LoseState : State
 {
-    // Start is called before the first frame update
-    void Start()
+    private GameFSM _stateMachine;
+    private GameController _controller;
+
+    public LoseState(GameFSM stateMachine, GameController controller)
     {
+        _stateMachine = stateMachine;
+        _controller = controller;
+    }
+    
+    public override void Enter()
+    {
+        base.Enter();
         
+        Debug.Log("STATE: Lose");
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Exit()
     {
-        
+        base.Exit();
+    }
+
+    public override void FixedTick()
+    {
+        base.FixedTick();
+    }
+
+    public override void Tick()
+    {
+        base.Tick();
     }
 }

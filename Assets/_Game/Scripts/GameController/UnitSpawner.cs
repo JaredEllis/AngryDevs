@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class UnitSpawner : MonoBehaviour
 {
-    public Unit Spawn(Unit unitPrefab, Transform location)
+    public Dev Spawn(Dev devPrefab, Transform location)
     {
-        Unit newUnit = Instantiate(unitPrefab, location.position, location.rotation);
-        return newUnit;
+        Dev newDev = Instantiate(devPrefab, location.position, location.rotation);
+        return newDev;
     }
 }

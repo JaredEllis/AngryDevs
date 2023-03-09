@@ -57,6 +57,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09179c5486b59646ad87747341246c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dev: {fileID: 0}
+  touchPosition: {x: 0, y: 0}
+  isPressed: 0
+  isReleased: 0
 --- !u!1 &6688263491077127790
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tapLimitDuration: 0.2
   _playerUnitPrefab: {fileID: 3802873730701602542, guid: de9ebbd87feadad4e8207530a5d3bc8d, type: 3}
-  _playerUnitSpawnLocation: {fileID: 6688263491077127791}
+  _playerUnitSpawnLocation: {fileID: 4075235029737756755, guid: 869537efb0dbc7146abe8680452e59c1, type: 3}
   _unitSpawner: {fileID: 6688263492593380104}
   _touchManager: {fileID: 6688263490874335909}
 --- !u!114 &6688263491449608122
