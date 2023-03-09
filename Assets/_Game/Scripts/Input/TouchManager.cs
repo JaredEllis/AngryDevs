@@ -72,5 +72,6 @@ public class TouchManager : MonoBehaviour
         _dev.isPressed = false;
         _dev.rb.isKinematic = false;
         StartCoroutine(_dev.Release());
+        //_dev.enabled = false;
     }
 }

@@ -9,6 +9,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
@@ -30,5 +31,7 @@ public class GameController : MonoBehaviour
     // public InputBroadcaster Input => _input;
     public TouchManager TouchManager => _touchManager;
 
-    
+    public GameObject WinText;
+    public GameObject LoseText;
+
 }

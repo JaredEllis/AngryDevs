@@ -7,6 +7,7 @@ public class WinState : State
     private GameFSM _stateMachine;
     private GameController _controller;
 
+
     public WinState(GameFSM stateMachine, GameController controller)
     {
         _stateMachine = stateMachine;
@@ -18,6 +19,7 @@ public class WinState : State
         base.Enter();
         
         Debug.Log("STATE: Win");
+        _controller.WinText.SetActive(true);
     }
 
     public override void Exit()

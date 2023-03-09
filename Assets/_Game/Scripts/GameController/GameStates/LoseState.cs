@@ -18,6 +18,7 @@ public class LoseState : State
         base.Enter();
         
         Debug.Log("STATE: Lose");
+        _controller.LoseText.SetActive(true);
     }
 
     public override void Exit()
